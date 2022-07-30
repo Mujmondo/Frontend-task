@@ -30,7 +30,7 @@ const Login = () => {
             setUsername('');
             setPassword('');
             alert('logged in successfully!')
-            navigate('/');
+            navigate('/home');
         }
         catch (err) {
             if (!err?.reponse) {
