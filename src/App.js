@@ -4,8 +4,8 @@ function App() {
   return (
     <div className="App overflow-x-hidden">
     <Routes>
-      <Route path="/" element={<Welcome />} />
-      <Route path="/login" element={<Login />} />
+      <Route path="/" element={<Login />} />
+      <Route path="/home" element={<Welcome />} />
       <Route path="/register" element={<Signup />} />
       <Route path="*" element={<div>404 Page Not Found!</div>} />
     </Routes>

@@ -104,7 +104,7 @@ const Signup = () => {
                     </form>
 
                     <p className="text-xs"><span className="mr-1">Already a member?</span>
-                        <Link to="/login" className="text-blue-400 hover:text-blue-600">Login</Link></p>
+                        <Link to="/" className="text-blue-400 hover:text-blue-600">Login</Link></p>
                 </div>
             </div>
         </div>
