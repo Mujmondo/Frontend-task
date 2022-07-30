@@ -1,16 +1,16 @@
 import { Link } from "react-router-dom";
 
 const Welcome = () => {
-    return ( 
+    return (
         <div className="welcome-page">
-             <div className="container flex h-screen justify-center items-center">
-            <div className="form-container bg-white shadow-xl justify-center">
-                <div className="mb-30 w-full m-2 p-2"><Link to="/login">Signout</Link></div>
-                <h1 className="text-center text-2xl">Hello, {}</h1>
+            <div className="container flex justify-center items-center mx-auto min-h-screen">
+                <div className="form-container bg-white shadow-xl w-full">
+                    <div className="bg-gray-200 w-full py-2"><Link to="/login" className="bg-sky-500 px-3 py-2.5 text-white">Logout</Link></div>
+                    <div className="w-full bg-gray-400 h-full text-white flex items-center justify-center text-center text-2xl">Hello!</div>
                 </div>
-                </div>
+            </div>
         </div>
-     );
+    );
 }
- 
+
 export default Welcome;

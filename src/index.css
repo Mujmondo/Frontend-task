@@ -10,25 +10,34 @@ body {
   width: 100%;
 }
 
-.form-container{
-   max-width: 800px;
-   height: 500px;
+.form-container {
+  max-width: 800px;
+  height: 500px;
 }
 
-.login-form, .signup-form{
+.login-form,
+.signup-form {
   width: 400px;
 }
 
-.form-wallpaper{
+.form-wallpaper {
   width: 400px;
   background-image: url(./images/wallpaper.jpg);
   background-position: left center;
   background-size: cover;
 }
 
-.form-wallpaper-2{
+.form-wallpaper-2 {
   width: 400px;
   background-image: url(./images/wallpaper2.jpg);
-  background-position: center;
+  background-position: right center;
   background-size: cover;
+}
+
+.error-check {
+  display: none;
+}
+
+input:focus:invalid~.error-check {
+  display: block;
 }
