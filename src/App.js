@@ -2,7 +2,7 @@ import {Login, Signup, Welcome} from "./components";
 import { Route, Routes} from "react-router-dom";
 function App() {
   return (
-    <div className="App">
+    <div className="App overflow-x-hidden">
     <Routes>
       <Route path="/" element={<Welcome />} />
       <Route path="/login" element={<Login />} />

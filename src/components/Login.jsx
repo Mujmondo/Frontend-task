@@ -35,11 +35,11 @@ const Login = () => {
         }
     }
     return ( 
-       <div className="container flex h-screen justify-center items-center">
-         <div className="form-container bg-white shadow-xl flex items-center">
-            <div className="form-wallpaper h-full">
+        <div className="container flex justify-center items-center mx-auto min-h-screen">
+            <div className="form-container bg-white shadow-xl flex items-center">
+                <div className="form-wallpaper hidden lg:block h-full">
             </div>
-            <div className="login-form text-center">
+            <div className="login-form text-center h-full flex flex-col justify-center items-center">
                 <h1 className=" text-xl font-medium text-blue-500 my-4">Login to your account</h1>
                 <form className="text-sm" onSubmit={handleSubmit}>
                     <div className="mb-5">
@@ -58,7 +58,7 @@ const Login = () => {
                                <p className="text-sm text-red-500">{errCode}</p>{errMsg}</p>
                     <button className="mb-2 bg-blue-400 px-4 py-1 rounded-full text-white hover:bg-blue-500 focus:ring-2 focus:ring-blue-300">login</button>
                     <p className="text-xs"><span className="mr-1">Not yet member?</span>
-                        <Link to="/register" className="text-blue-400 hover:text-blue-600">Signup now</Link></p> 
+                        <Link to="/register" className="text-blue-400 hover:text-blue-600">Sign up</Link></p> 
                 </form>
             </div>
         </div>

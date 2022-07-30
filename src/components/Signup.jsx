@@ -41,9 +41,9 @@ const Signup = () => {
         }
     }
     return (
-        <div className="container flex h-screen justify-center items-center">
+        <div className="container flex justify-center items-center mx-auto min-h-screen">
             <div className="form-container bg-white shadow-xl flex items-center">
-                <div className="form-wallpaper-2 h-full">
+                <div className="form-wallpaper-2  hidden lg:block h-full">
                 </div>
                 <div className="signup-form text-center">
                     <h1 className=" text-xl font-medium text-blue-500 my-4">Create a new account</h1>
@@ -73,14 +73,14 @@ const Signup = () => {
                             onChange={(e) => setPassword2(e.target.value)}
                             value={password2}
                             type="password" placeholder="Confirm password" minLength="8" required /><br />
-                               <p className="text-xs text-black-500 mb-2 mx-3">
-                               <span className="text-sm text-red-500">{errCode}</span><br/>{errMsg}</p>
+                                                <p className="text-xs text-black-500 mb-2 mx-3">
+                               <p className="text-sm text-red-500">{errCode}</p>{errMsg}</p>
                         <button 
                         className="mb-2 bg-blue-400 px-4 py-1 rounded-full text-white hover:bg-blue-500 focus:ring-2 focus:ring-blue-300"
                         >Sign up</button>
                     </form>
                     <p className="text-xs"><span className="mr-1">Already a member?</span>
-                        <Link to="/login" className="text-blue-400 hover:text-blue-600">Login now</Link></p>
+                        <Link to="/login" className="text-blue-400 hover:text-blue-600">Login</Link></p>
                 </div>
             </div>
         </div>

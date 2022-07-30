@@ -5,11 +5,13 @@
 body {
   margin: 0;
   font-family: "poppins";
-  background-color: rgb(238, 238, 238);
+  background-color: rgb(177, 209, 228);
+  min-height: 100vh;
+  width: 100%;
 }
 
 .form-container{
-   width: 800px;
+   max-width: 800px;
    height: 500px;
 }
 
