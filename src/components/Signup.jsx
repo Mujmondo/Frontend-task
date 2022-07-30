@@ -35,7 +35,7 @@ const Signup = () => {
             setPassword('');
             setPassword2('');
             alert('Signed up successfully!')
-            navigate('/login');
+            navigate('/');
         }
         catch (err) {
             if (!err?.reponse) {
